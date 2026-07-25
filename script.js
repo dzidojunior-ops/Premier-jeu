@@ -20,8 +20,8 @@ function perdre(){
     bouton.style.display = "block";
 }
 function deplacer(){
-    const x = Math.random() * ((largeur-50) - tailleCarre);
-    const y = Math.random() * ((hauteur-50) - tailleCarre);
+    const x = Math.random() * ((largeur-30) - tailleCarre);
+    const y = Math.random() * ((hauteur-30) - tailleCarre);
     carre.style.transform = `translate(${x}px, ${y}px)`;
     // carre.style.transform = "translate(200px,200px)";
 }

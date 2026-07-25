@@ -1,0 +1,80 @@
+
+#carre{
+    width: 15vw;
+    height: 15vw;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    transition: transform 0.5s;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    touch-action: none;
+    overflow: hidden;
+}
+
+#conteneurTemps {
+    width: 300px;
+    height: 20px;
+    background-color: white;
+}
+
+#temps {
+    width: 100%;
+    height: 100%;
+    background-color: lime;
+}
+#rejouer{
+    display: none;
+    width: 50%;
+    height: 70px;
+    background-color: rgb(10, 156, 10);
+    font-size: 40px;
+    border: none;
+    border-radius: 5%;
+}
+.score{
+    background-color: blueviolet;
+    width: 10%;
+    text-align: center;
+}
+.niveau{
+    background-color: crimson;
+    width: 10%;
+    text-align: center;
+}
+
+.etat{
+    display: flex;
+    align-items: center;
+    
+}
+
+#message{
+    background-color: dodgerblue;
+    width: 50%;
+    text-align: center;
+}
+
+.animation{
+    animation: nivsup 3s;
+}
+@keyframes nivsup{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        opacity: 100;
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
